@@ -1,4 +1,4 @@
-
+// creating our own backet module
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { CustomersComponent } from './customers.component';

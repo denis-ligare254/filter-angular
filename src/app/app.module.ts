@@ -1,18 +1,12 @@
+import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
-import { AppComponent } from './app.component';
-import { CustomersComponent } from './customers/customers.component';
+// importing customers module into the root module which is app.module.ts
+import { CustomersModule } from './customers/customers.module';
+import { AppComponent }  from './app.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    CustomersComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  imports:      [ BrowserModule, CustomersModule ],
+  declarations: [ AppComponent ],
+  bootstrap:    [ AppComponent ]
 })
-export class AppModule { }
+export class AppModule { } 
